@@ -1,0 +1,15 @@
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET localhost:7777/movies
+
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET localhost:7777/movies/101
+
+curl -X POST --data "name = Toystory&year = 1995&rating = 8.5" http://localhost:7777/movies
+
+curl -X PUT --data "name = Toystory&year = 1995&rating = 8.5" http://localhost:7777/movies/101
+
+curl -X GET "http://localhost:7777/hello"
+
+curl -X POST "http://localhost:7777/hello"
+
+curl -X PUT --data "name = James&age = 20" http://localhost:7777/things/update/59ceee99a822a70c68ee236c
+
+curl -X DELETE http://localhost:7777/things/delete/59ceee99a822a70c68ee236c

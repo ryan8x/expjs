@@ -2,14 +2,16 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET
 
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET localhost:7777/movies/101
 
-curl -X POST --data "name = Toystory&year = 1995&rating = 8.5" http://localhost:7777/movies
+curl -X POST --data "name=Toystory&year=1995&rating = 8.5" http://localhost:7777/movies
 
-curl -X PUT --data "name = Toystory&year = 1995&rating = 8.5" http://localhost:7777/movies/101
+curl -X PUT --data "name=Toystory&year=1995&rating= 8.5" http://localhost:7777/movies/101
 
 curl -X GET "http://localhost:7777/hello"
 
 curl -X POST "http://localhost:7777/hello"
 
-curl -X PUT --data "name = James&age = 20" http://localhost:7777/things/update/59ceee99a822a70c68ee236c
+curl -X PUT --data "name=James&age=20" http://localhost:7777/things/update/5a161f1e992f0f62304b16af
 
-curl -X DELETE http://localhost:7777/things/delete/59ceee99a822a70c68ee236c
+curl -X DELETE http://localhost:7777/things/delete/5a13792774c4e16298f25621
+
+curl -X POST --data "name=ryan&age=22" http://localhost:7777/things/addPerson

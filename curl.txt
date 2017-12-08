@@ -10,8 +10,10 @@ curl -X GET "http://localhost:7777/hello"
 
 curl -X POST "http://localhost:7777/hello"
 
+curl -X GET "http://localhost:7777/things/getPeople"
+
 curl -X PUT --data "name=James&age=20" http://localhost:7777/things/update/5a161f1e992f0f62304b16af
 
 curl -X DELETE http://localhost:7777/things/delete/5a13792774c4e16298f25621
 
-curl -X POST --data "name=ryan&age=22" http://localhost:7777/things/addPerson
+curl -X POST --data "name=22ryan&age=522" http://localhost:7777/things/addPerson
